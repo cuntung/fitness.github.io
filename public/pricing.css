@@ -1,0 +1,44 @@
+.navbarPricing{
+    padding-bottom:10px;
+    margin-bottom: ;
+}
+
+#topContainer{
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+.card-body{
+    align-items: center;
+    text-align: center;
+}
+
+
+.btn {
+    border:none;
+    padding: 10px 50px;
+}
+.btn:after {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all 0.2s cubic-bezier(0.100, 0.84, 0.44, 1);
+    transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.btn:hover {
+    transform: scale(0.02, 0.02);
+    -webkit-transform: scale(1.02, 1.02);
+    backface-visibility: hidden; 
+    will-change: transform;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.75) !important;
+}
+
+.btn:hover::after {
+    opacity: 1;
+}
+
+.btn:hover .btn-outline-primary{
+    color:white;
+    background:#007bff;
+}
